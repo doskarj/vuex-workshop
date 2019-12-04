@@ -29,7 +29,7 @@ export default {
   },
   computed: {
     lastUserId () {
-      return this.users.length > 0 ? this.users[this.users.length - 1].id : 0;
+      return this.users && this.users.length > 0 ? this.users[this.users.length - 1].id : 0;
     }
   },
   methods: {
